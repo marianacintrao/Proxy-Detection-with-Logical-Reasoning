@@ -3,7 +3,8 @@
         not protected(Attr1), not outcome(Attr1),
         not protected(Attr2), not outcome(Attr2),
         not protected(Attr3), not outcome(Attr3),
-        Attr1 != Attr2, Attr1 != Attr3, Attr2 != Attr3.
+        attribute_id(Attr1, O1), attribute_id(Attr2, O2), attribute_id(Attr3, O3),
+        O1 < O2, O2 < O3.
         
     three_cluster_plus_protected(Attr1, Val1, Attr2, Val2, Attr3, Val3, Attr4, Val4, Item) :-
         attribute(Attr1, Item, Val1), attribute(Attr2, Item, Val2), attribute(Attr3, Item, Val3), 
@@ -58,5 +59,3 @@
 
     #show implication/10.
     #show protected/1.
-    #show count_facts/1.
-    #show count_items/1.

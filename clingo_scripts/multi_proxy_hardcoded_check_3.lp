@@ -63,4 +63,3 @@
 
     #show implication/10.
     #show protected/1.
-    #show count_items/1.

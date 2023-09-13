@@ -56,4 +56,3 @@
 
     #show implication/8.
     #show protected/1.
-    #show count_items/1.

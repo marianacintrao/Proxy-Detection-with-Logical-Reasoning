@@ -1,8 +1,9 @@
 import clingo
+import os
+import sys
 
 def on_model(m):
     print(m)
-
 
 def call_clingo(data, script):
     ctl = clingo.Control(["-W", "none"])
@@ -12,8 +13,6 @@ def call_clingo(data, script):
     ctl.ground()
     ctl.solve(on_model=on_model)
     print("\n")
-
-import os
 
 absolute_path = os.path.dirname(__file__)
 relative_path = "../lib"
@@ -34,4 +33,11 @@ def get_proxy_clusters_hardcoded(datafile):
     # 3 attributes proxy cluster #
     script = open("clingo_scripts/multi_proxy_hardcoded_3.lp", "r").read()
     call_clingo(data, script)
+
+if __name__ == "__main__":
+
+    datafile = sys.argv[1]
+
+    get_proxy_clusters_hardcoded(datafile)
+
     

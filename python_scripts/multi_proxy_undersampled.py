@@ -10,7 +10,6 @@ def process_potential_implications(clingo_output):
         line = lines[i]
         implications = re.split("implication", line)[1:]
         for imp in implications:
-            imp = re.split("count_facts", imp)[0]
             print("potential_implication" + imp + ".")
             
 

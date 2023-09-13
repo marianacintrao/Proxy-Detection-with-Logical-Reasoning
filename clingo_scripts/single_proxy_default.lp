@@ -43,6 +43,3 @@ count_items(C) :-
 
 #show implication/6.
 #show protected/1.
-#show outcome/1.
-#show count_facts/1.
-#show count_items/1.

@@ -2,7 +2,7 @@
         attribute(Attr1, Item, Val1), attribute(Attr2, Item, Val2),
         not protected(Attr1), not outcome(Attr1),
         not protected(Attr2), not outcome(Attr2),
-        Attr1 != Attr2.
+        attribute_id(Attr1, O1), attribute_id(Attr2, O2), O1 < O2. 
         
     two_cluster_plus_protected(Attr1, Val1, Attr2, Val2, Attr3, Val3, Item) :-
         attribute(Attr1, Item, Val1), attribute(Attr2, Item, Val2),
@@ -51,5 +51,3 @@
 
     #show implication/8.
     #show protected/1.
-    #show count_facts/1.
-    #show count_items/1.

@@ -13,6 +13,11 @@ def write_clingo_data(data, clingodataname, protected_attributes, outcome_attrib
     
     attributes = list(data.columns)
     f = open(clingodataname, "w")
+
+    for id, attr in enumerate(attributes):
+        attr_string = "attribute_id(" + format_value(attr) + ", " + str(id) + ").\n"
+        f.write(attr_string)
+    f.write("\n")
         
     for index, row in data.iterrows():
         item_name = "i" + str(index)
