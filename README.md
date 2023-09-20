@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code and documentation for methods and algorithms developed as part of a Master Thesis on Resoning over Indirect Discrimination under the supervision of Prof. Inês Lynce and Filipe Gouveia. The part of the research included here focuses on using [Potassco](https://potassco.org/)'s [clingo](https://potassco.org/clingo/) to find relationships in tabular datasets that point to proxies of protected attributes. 
+This repository contains the source code and documentation for methods and algorithms developed as part of a Master Thesis on Resoning over Indirect Discrimination under the supervision of Dr. Filipe Gouveia and Prof. Inês Lynce. The part of the research included here focuses on using [Potassco](https://potassco.org/)'s [clingo](https://potassco.org/clingo/) to find relationships in tabular datasets that point to proxies of protected attributes. 
 
 ## Introduction
 
@@ -17,7 +17,7 @@ To find the potential proxy attributes, we retrieve attributes that imply protec
 For example, let us take a look at the German Credit dataset where the protected attribute is `age_cat` (as in age category). 
 88% of the times where the value for the attribute `credit_history` is `critical/other existing credit`, the value for `age_cat` is `old`. Furthermore, 29% of the records in the dataset, have a value of `critical/other existing credit` for the attribute `credit_history`. Hence, we say that `credit_history = critical/other existing credit` implies `age_cat = old` with a probability of 88% and an incidence of 29%.
 
-In the [Notebook](https://jupyter.org/) [file](https://github.com/marianacintrao/Proxy-Detection-with-Logical-Reasoning/blob/main/proxy_detect.ipynb) in this directory the four describe methods are:
+In the [Notebook](https://jupyter.org/) file [`proxy_detect.ipynb`](https://github.com/marianacintrao/Proxy-Detection-with-Logical-Reasoning/blob/main/proxy_detect.ipynb), in this directory the four describe methods are:
 
 **Single proxy discovery**
 
