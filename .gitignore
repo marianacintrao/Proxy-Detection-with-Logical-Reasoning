@@ -4,5 +4,5 @@ undersampled_clingo_data/
 potential_proxies_*
 __pycache__/
 bin/
-
+README.ipynb
 
