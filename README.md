@@ -1,5 +1,9 @@
 # Proxy-Detection-with-Logical-Reasoning
 
+## Author
+
+- [Mariana Cintrão](https://github.com/marianacintrao)
+
 ## Overview
 
 This repository contains the source code and documentation for methods and algorithms developed as part of a Master Thesis on Resoning over Indirect Discrimination under the supervision of Dr. Filipe Gouveia and Prof. Inês Lynce. The part of the research included here focuses on using [Potassco](https://potassco.org/)'s [clingo](https://potassco.org/clingo/) to find relationships in tabular datasets that point to proxies of protected attributes. 
